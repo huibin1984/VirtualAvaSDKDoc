@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>AvatarInfo Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/AvatarInfo" class="dashAnchor"></a>
+    <a title="AvatarInfo Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a> (58% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        AvatarInfo Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/AONManager.html">AONManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AONManager/AULoopMode.html">– AULoopMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AONManager/AnimationLoopMode.html">– AnimationLoopMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AONNetClient.html">AONNetClient</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AuthInfo.html">AuthInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AvaBundle.html">AvaBundle</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AvatarInfo.html">AvatarInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AvatarView.html">AvatarView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AvatarView/AvatarRenderMode.html">– AvatarRenderMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/FileStorage.html">FileStorage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Log.html">Log</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/BundleType.html">BundleType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/BundleType/MakeupType.html">– MakeupType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ClientErrorCode.html">ClientErrorCode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Gender.html">Gender</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/MainType.html">MainType</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/HTTPClientError.html">HTTPClientError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Reactive.html">Reactive</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:13VirtualAvaSDK11ArrayResulta">ArrayResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:13VirtualAvaSDK12AvatarResulta">AvatarResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:13VirtualAvaSDK10BindResulta">BindResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:13VirtualAvaSDK13BundlesResulta">BundlesResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:13VirtualAvaSDK16DictionaryResulta">DictionaryResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:13VirtualAvaSDK14FilePathResulta">FilePathResult</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>AvatarInfo</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="kt">AvatarInfo</span> <span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">Codable</span></code></pre>
+
+                </div>
+              </div>
+            <p>Avatar对象</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13VirtualAvaSDK10AvatarInfoC8avatarIdSSvp"></a>
+                    <a name="//apple_ref/swift/Property/avatarId" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13VirtualAvaSDK10AvatarInfoC8avatarIdSSvp">avatarId</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">avatarId</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13VirtualAvaSDK10AvatarInfoC6genderSivp"></a>
+                    <a name="//apple_ref/swift/Property/gender" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13VirtualAvaSDK10AvatarInfoC6genderSivp">gender</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">gender</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13VirtualAvaSDK10AvatarInfoC7previewSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/preview" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13VirtualAvaSDK10AvatarInfoC7previewSSSgvp">preview</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">preview</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13VirtualAvaSDK10AvatarInfoC7pictureSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/picture" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13VirtualAvaSDK10AvatarInfoC7pictureSSSgvp">picture</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">picture</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13VirtualAvaSDK10AvatarInfoC8avatarId9bundleurl5token6gender9texPoints5appID10parameters7preview7pictureACSS_S2SSiS2SSgA3Mtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(avatarId:bundleurl:token:gender:texPoints:appID:parameters:preview:picture:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13VirtualAvaSDK10AvatarInfoC8avatarId9bundleurl5token6gender9texPoints5appID10parameters7preview7pictureACSS_S2SSiS2SSgA3Mtcfc">init(avatarId:bundleurl:token:gender:texPoints:appID:parameters:preview:picture:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">required</span> <span class="nf">init</span><span class="p">(</span><span class="nv">avatarId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                     <span class="nv">bundleurl</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                     <span class="nv">token</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                     <span class="nv">gender</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span>
+                     <span class="nv">texPoints</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                     <span class="nv">appID</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+                     <span class="nv">parameters</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+                     <span class="nv">preview</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+                     <span class="nv">picture</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/==%20&amp;&amp;%20hash"></a>
+                <a name="//apple_ref/swift/Section/== &amp;&amp; hash" class="dashAnchor"></a>
+                <a href="#/==%20&amp;&amp;%20hash">
+                  <h3 class="section-name">== &amp;&amp; hash</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@VirtualAvaSDK@objc(cs)AvatarInfo(im)isEqual:"></a>
+                    <a name="//apple_ref/swift/Method/isEqual(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@VirtualAvaSDK@objc(cs)AvatarInfo(im)isEqual:">isEqual(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">override</span> <span class="kd">func</span> <span class="nf">isEqual</span><span class="p">(</span><span class="n">_</span> <span class="nv">object</span><span class="p">:</span> <span class="kt">Any</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@VirtualAvaSDK@objc(cs)AvatarInfo(py)hash"></a>
+                    <a name="//apple_ref/swift/Property/hash" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@VirtualAvaSDK@objc(cs)AvatarInfo(py)hash">hash</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">override</span> <span class="k">var</span> <span class="nv">hash</span><span class="p">:</span> <span class="kt">Int</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/default%20avatar"></a>
+                <a name="//apple_ref/swift/Section/default avatar" class="dashAnchor"></a>
+                <a href="#/default%20avatar">
+                  <h3 class="section-name">default avatar</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13VirtualAvaSDK10AvatarInfoC011defaultMaleD0ACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/defaultMaleAvatar" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13VirtualAvaSDK10AvatarInfoC011defaultMaleD0ACvpZ">defaultMaleAvatar</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>default male avatar info</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">defaultMaleAvatar</span><span class="p">:</span> <span class="kt">AvatarInfo</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13VirtualAvaSDK10AvatarInfoC013defaultFemaleD0ACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/defaultFemaleAvatar" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13VirtualAvaSDK10AvatarInfoC013defaultFemaleD0ACvpZ">defaultFemaleAvatar</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>default female avatar info</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">defaultFemaleAvatar</span><span class="p">:</span> <span class="kt">AvatarInfo</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2018-10-11)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

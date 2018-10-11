@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>AONNetClient Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/AONNetClient" class="dashAnchor"></a>
+    <a title="AONNetClient Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a> (58% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        AONNetClient Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/AONManager.html">AONManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AONManager/AULoopMode.html">– AULoopMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AONManager/AnimationLoopMode.html">– AnimationLoopMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AONNetClient.html">AONNetClient</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AuthInfo.html">AuthInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AvaBundle.html">AvaBundle</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AvatarInfo.html">AvatarInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AvatarView.html">AvatarView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AvatarView/AvatarRenderMode.html">– AvatarRenderMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/FileStorage.html">FileStorage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Log.html">Log</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/BundleType.html">BundleType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/BundleType/MakeupType.html">– MakeupType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ClientErrorCode.html">ClientErrorCode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Gender.html">Gender</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/MainType.html">MainType</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/HTTPClientError.html">HTTPClientError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Reactive.html">Reactive</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:13VirtualAvaSDK11ArrayResulta">ArrayResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:13VirtualAvaSDK12AvatarResulta">AvatarResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:13VirtualAvaSDK10BindResulta">BindResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:13VirtualAvaSDK13BundlesResulta">BundlesResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:13VirtualAvaSDK16DictionaryResulta">DictionaryResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:13VirtualAvaSDK14FilePathResulta">FilePathResult</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>AONNetClient</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="kt">AONNetClient</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+
+                </div>
+              </div>
+            <p>可以使用AONNetClient从网络中获取avatar的资源信息，前提是一定要先绑定第三方的uid</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/class%20var"></a>
+                <a name="//apple_ref/swift/Section/class var" class="dashAnchor"></a>
+                <a href="#/class%20var">
+                  <h3 class="section-name">class var</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13VirtualAvaSDK12AONNetClientC12sharedClinetACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/sharedClinet" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13VirtualAvaSDK12AONNetClientC12sharedClinetACvpZ">sharedClinet</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">sharedClinet</span><span class="p">:</span> <span class="kt">AONNetClient</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/state"></a>
+                <a name="//apple_ref/swift/Section/state" class="dashAnchor"></a>
+                <a href="#/state">
+                  <h3 class="section-name">state</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@VirtualAvaSDK@objc(cs)AONNetClient(im)bindWithUid:complete:"></a>
+                    <a name="//apple_ref/swift/Method/bind(uid:complete:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@VirtualAvaSDK@objc(cs)AONNetClient(im)bindWithUid:complete:">bind(uid:complete:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>绑定第三方的用户Uid</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">bind</span><span class="p">(</span><span class="nv">uid</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">complete</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt"><a href="../Typealiases.html#/s:13VirtualAvaSDK10BindResulta">BindResult</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>uid</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>第三方用户id</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>complete</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>绑定完成后的回调</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@VirtualAvaSDK@objc(cs)AONNetClient(im)getCategoriesWithType:complete:"></a>
+                    <a name="//apple_ref/swift/Method/getCategories(type:complete:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@VirtualAvaSDK@objc(cs)AONNetClient(im)getCategoriesWithType:complete:">getCategories(type:complete:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>获取绑定用户的所有分类,返回数据实例:</p>
+
+<p>获取beauty类型的分类数据:</p>
+
+<p>beauty=[{key=clothes, name=上衣}, {key=glass, name=眼镜}, {key=hair, name=头发}, {key=shoe, name=鞋子}, {key=skybox, name=背景}, {key=trouser, name=下装}, {key=eye, name=眼球}]</p>
+
+<p>获取dress类型的分类数据:</p>
+
+<p>prop=[{key=clothes, name=上衣}, {key=glass, name=眼镜}, {key=hair, name=头发}, {key=shoe, name=鞋子}, {key=skybox, name=背景}, {key=trouser, name=下装}, {key=eye, name=眼球}]</p>
+
+<p>获取animation类型的分类数据:</p>
+
+<p>ani=[{key=au, name=表情}, {key=aus, name=AU}, {key=ske_ani, name=骨骼动画}]</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">getCategories</span><span class="p">(</span><span class="nv">type</span><span class="p">:</span><span class="kt"><a href="../Enums/MainType.html">MainType</a></span><span class="p">,</span><span class="nv">complete</span><span class="p">:</span><span class="kd">@escaping</span> <span class="kt"><a href="../Typealiases.html#/s:13VirtualAvaSDK11ArrayResulta">ArrayResult</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>type</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>主类型目前有beauty,dress,animation三种具体查看MainType</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>complete</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>返回分类的key，可以使用key进一步获取分类的详细数据</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@VirtualAvaSDK@objc(cs)AONNetClient(im)getBundlesWithType:fetch:page:complete:"></a>
+                    <a name="//apple_ref/swift/Method/getBundles(type:fetch:page:complete:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@VirtualAvaSDK@objc(cs)AONNetClient(im)getBundlesWithType:fetch:page:complete:">getBundles(type:fetch:page:complete:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>获取某个分类里面详细的bundle数据，bundle是加载3d模型的数据</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">getBundles</span><span class="p">(</span><span class="nv">type</span><span class="p">:</span><span class="kt">String</span><span class="p">,</span>
+                       <span class="nv">fetch</span><span class="p">:</span><span class="kt">Int</span><span class="p">,</span>
+                       <span class="nv">page</span><span class="p">:</span><span class="kt">Int</span><span class="p">,</span>
+                       <span class="nv">complete</span><span class="p">:</span><span class="kd">@escaping</span> <span class="kt"><a href="../Typealiases.html#/s:13VirtualAvaSDK13BundlesResulta">BundlesResult</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>type</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>从getCategories接口获取的key也就是分类的type</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>fetch</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>获取bundle的个数</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>page</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>分页数量从1开始</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>complete</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>返回的bundle数据</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@VirtualAvaSDK@objc(cs)AONNetClient(im)createAvatarWithImageData:facePoints:gender:complete:"></a>
+                    <a name="//apple_ref/swift/Method/createAvatar(imageData:facePoints:gender:complete:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@VirtualAvaSDK@objc(cs)AONNetClient(im)createAvatarWithImageData:facePoints:gender:complete:">createAvatar(imageData:facePoints:gender:complete:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>创建3D模型的请求</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">createAvatar</span><span class="p">(</span><span class="nv">imageData</span><span class="p">:</span><span class="kt">Data</span><span class="p">,</span>
+                         <span class="nv">facePoints</span><span class="p">:[</span><span class="kt">CGPoint</span><span class="p">]?,</span>
+                         <span class="nv">gender</span><span class="p">:</span><span class="kt"><a href="../Enums/Gender.html">Gender</a></span><span class="p">,</span>
+                         <span class="nv">complete</span><span class="p">:</span><span class="kd">@escaping</span> <span class="kt"><a href="../Typealiases.html#/s:13VirtualAvaSDK12AvatarResulta">AvatarResult</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>imageData</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>图像data</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>facePoints</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>人脸识别的点位</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>gender</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>性别</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>complete</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>返回创建完成的avatar对象</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@VirtualAvaSDK@objc(cs)AONNetClient(im)getCurrentAvaInfoWithComplete:"></a>
+                    <a name="//apple_ref/swift/Method/getCurrentAvaInfo(complete:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@VirtualAvaSDK@objc(cs)AONNetClient(im)getCurrentAvaInfoWithComplete:">getCurrentAvaInfo(complete:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>获取用户当前的avatar</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">getCurrentAvaInfo</span><span class="p">(</span><span class="nv">complete</span><span class="p">:</span><span class="kd">@escaping</span> <span class="kt"><a href="../Typealiases.html#/s:13VirtualAvaSDK12AvatarResulta">AvatarResult</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>complete</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>返回avatar对象</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@VirtualAvaSDK@objc(cs)AONNetClient(im)uploadFileData:completion:"></a>
+                    <a name="//apple_ref/swift/Method/uploadFileData(_:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@VirtualAvaSDK@objc(cs)AONNetClient(im)uploadFileData:completion:">uploadFileData(_:completion:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">uploadFileData</span><span class="p">(</span><span class="n">_</span> <span class="nv">data</span><span class="p">:</span> <span class="kt">Data</span><span class="p">,</span> <span class="n">completion</span> <span class="nv">block</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:13VirtualAvaSDK14FilePathResulta">FilePathResult</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2018-10-11)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

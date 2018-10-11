@@ -1,0 +1,621 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/wuhuibin/Developer/iOS/VirtualAvaSDK/VirtualAvaSDK/AONManager+Makeup.swift",
+      "line": 191,
+      "symbol": "Reactive.getRawAvatarTexture()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/wuhuibin/Developer/iOS/VirtualAvaSDK/VirtualAvaSDK/AvatarView.swift",
+      "line": 16,
+      "symbol": "AvatarView.init(coder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/wuhuibin/Developer/iOS/VirtualAvaSDK/VirtualAvaSDK/AvatarView.swift",
+      "line": 21,
+      "symbol": "AvatarView.init(frame:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/wuhuibin/Developer/iOS/VirtualAvaSDK/VirtualAvaSDK/AvatarView.swift",
+      "line": 46,
+      "symbol": "AvatarView.didMoveToWindow()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/wuhuibin/Developer/iOS/VirtualAvaSDK/VirtualAvaSDK/AvatarView.swift",
+      "line": 55,
+      "symbol": "AvatarView.backgroundColor",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/wuhuibin/Developer/iOS/VirtualAvaSDK/VirtualAvaSDK/AvatarView.swift",
+      "line": 112,
+      "symbol": "AvatarView.AvatarRenderMode",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/wuhuibin/Developer/iOS/VirtualAvaSDK/VirtualAvaSDK/AvatarView.swift",
+      "line": 113,
+      "symbol": "AvatarView.AvatarRenderMode.none",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/wuhuibin/Developer/iOS/VirtualAvaSDK/VirtualAvaSDK/AvatarView.swift",
+      "line": 114,
+      "symbol": "AvatarView.AvatarRenderMode.skybox",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/wuhuibin/Developer/iOS/VirtualAvaSDK/VirtualAvaSDK/AvatarView.swift",
+      "line": 115,
+      "symbol": "AvatarView.AvatarRenderMode.avatar",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/wuhuibin/Developer/iOS/VirtualAvaSDK/VirtualAvaSDK/AvatarView.swift",
+      "line": 116,
+      "symbol": "AvatarView.AvatarRenderMode.all",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/wuhuibin/Developer/iOS/VirtualAvaSDK/VirtualAvaSDK/AvatarView.swift",
+      "line": 132,
+      "symbol": "AvatarView.renderMode",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/wuhuibin/Developer/iOS/VirtualAvaSDK/VirtualAvaSDK/Model/AuthInfo.swift",
+      "line": 13,
+      "symbol": "AuthInfo.riverId",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/wuhuibin/Developer/iOS/VirtualAvaSDK/VirtualAvaSDK/Model/AuthInfo.swift",
+      "line": 14,
+      "symbol": "AuthInfo.riverToken",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/wuhuibin/Developer/iOS/VirtualAvaSDK/VirtualAvaSDK/Model/AuthInfo.swift",
+      "line": 15,
+      "symbol": "AuthInfo.riverSign",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/wuhuibin/Developer/iOS/VirtualAvaSDK/VirtualAvaSDK/Model/AuthInfo.swift",
+      "line": 16,
+      "symbol": "AuthInfo.identify",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/wuhuibin/Developer/iOS/VirtualAvaSDK/VirtualAvaSDK/Model/AuthInfo.swift",
+      "line": 17,
+      "symbol": "AuthInfo.wssuris",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/wuhuibin/Developer/iOS/VirtualAvaSDK/VirtualAvaSDK/Model/AuthInfo.swift",
+      "line": 19,
+      "symbol": "AuthInfo.init(riverId:riverToken:riverSign:identify:wssuris:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/wuhuibin/Developer/iOS/VirtualAvaSDK/VirtualAvaSDK/Model/AvaBundle.swift",
+      "line": null,
+      "symbol": "AvaBundle",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/wuhuibin/Developer/iOS/VirtualAvaSDK/VirtualAvaSDK/Model/AvaBundle.swift",
+      "line": null,
+      "symbol": "AvaBundle",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/wuhuibin/Developer/iOS/VirtualAvaSDK/VirtualAvaSDK/Model/AvaBundle.swift",
+      "line": 27,
+      "symbol": "AvaBundle",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/wuhuibin/Developer/iOS/VirtualAvaSDK/VirtualAvaSDK/Model/AvaBundle.swift",
+      "line": 28,
+      "symbol": "AvaBundle.bundleId",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/wuhuibin/Developer/iOS/VirtualAvaSDK/VirtualAvaSDK/Model/AvaBundle.swift",
+      "line": 31,
+      "symbol": "AvaBundle.gender",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/wuhuibin/Developer/iOS/VirtualAvaSDK/VirtualAvaSDK/Model/AvaBundle.swift",
+      "line": 33,
+      "symbol": "AvaBundle.leafcate",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/wuhuibin/Developer/iOS/VirtualAvaSDK/VirtualAvaSDK/Model/AvaBundle.swift",
+      "line": 34,
+      "symbol": "AvaBundle.cover",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/wuhuibin/Developer/iOS/VirtualAvaSDK/VirtualAvaSDK/Model/AvaBundle.swift",
+      "line": 35,
+      "symbol": "AvaBundle.name",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/wuhuibin/Developer/iOS/VirtualAvaSDK/VirtualAvaSDK/Model/AvaBundle.swift",
+      "line": 50,
+      "symbol": "AvaBundle.init(bundleId:bundleurl:token:gender:cate:leafcate:name:extend:cover:nums:place:price:rule:sort:status:verInt:version:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/wuhuibin/Developer/iOS/VirtualAvaSDK/VirtualAvaSDK/Model/AvaBundle.swift",
+      "line": 89,
+      "symbol": "AvaBundle.bundleURL",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/wuhuibin/Developer/iOS/VirtualAvaSDK/VirtualAvaSDK/Model/AvaBundle.swift",
+      "line": 93,
+      "symbol": "AvaBundle.bundleType",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/wuhuibin/Developer/iOS/VirtualAvaSDK/VirtualAvaSDK/Model/AvaBundle.swift",
+      "line": 128,
+      "symbol": "AvaBundle.isEqual(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/wuhuibin/Developer/iOS/VirtualAvaSDK/VirtualAvaSDK/Model/AvaBundle.swift",
+      "line": 138,
+      "symbol": "AvaBundle.hash",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/wuhuibin/Developer/iOS/VirtualAvaSDK/VirtualAvaSDK/Model/AvaBundle.swift",
+      "line": 170,
+      "symbol": "AvaBundle.whitenBundle()",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/wuhuibin/Developer/iOS/VirtualAvaSDK/VirtualAvaSDK/Model/AvaBundle.swift",
+      "line": 174,
+      "symbol": "AvaBundle.smoothBundle()",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/wuhuibin/Developer/iOS/VirtualAvaSDK/VirtualAvaSDK/Model/AvaBundle.swift",
+      "line": 178,
+      "symbol": "AvaBundle.averageBundle()",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/wuhuibin/Developer/iOS/VirtualAvaSDK/VirtualAvaSDK/Model/AvaBundle.swift",
+      "line": 182,
+      "symbol": "AvaBundle.organ3DBundle()",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/wuhuibin/Developer/iOS/VirtualAvaSDK/VirtualAvaSDK/Model/AvaBundle.swift",
+      "line": 186,
+      "symbol": "AvaBundle.sweetBundle()",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/wuhuibin/Developer/iOS/VirtualAvaSDK/VirtualAvaSDK/Model/AvaBundle.swift",
+      "line": 190,
+      "symbol": "AvaBundle.faceTypeBundle()",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/wuhuibin/Developer/iOS/VirtualAvaSDK/VirtualAvaSDK/Model/AvaBundle.swift",
+      "line": 194,
+      "symbol": "AvaBundle.defaultAdjustValue",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/wuhuibin/Developer/iOS/VirtualAvaSDK/VirtualAvaSDK/Model/AvaBundle.swift",
+      "line": 204,
+      "symbol": "AvaBundle.description",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/wuhuibin/Developer/iOS/VirtualAvaSDK/VirtualAvaSDK/Model/AvatarInfo.swift",
+      "line": 13,
+      "symbol": "AvatarInfo.avatarId",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/wuhuibin/Developer/iOS/VirtualAvaSDK/VirtualAvaSDK/Model/AvatarInfo.swift",
+      "line": 16,
+      "symbol": "AvatarInfo.gender",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/wuhuibin/Developer/iOS/VirtualAvaSDK/VirtualAvaSDK/Model/AvatarInfo.swift",
+      "line": 20,
+      "symbol": "AvatarInfo.preview",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/wuhuibin/Developer/iOS/VirtualAvaSDK/VirtualAvaSDK/Model/AvatarInfo.swift",
+      "line": 21,
+      "symbol": "AvatarInfo.picture",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/wuhuibin/Developer/iOS/VirtualAvaSDK/VirtualAvaSDK/Model/AvatarInfo.swift",
+      "line": 37,
+      "symbol": "AvatarInfo.init(avatarId:bundleurl:token:gender:texPoints:appID:parameters:preview:picture:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/wuhuibin/Developer/iOS/VirtualAvaSDK/VirtualAvaSDK/Model/AvatarInfo.swift",
+      "line": 81,
+      "symbol": "AvatarInfo.isEqual(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/wuhuibin/Developer/iOS/VirtualAvaSDK/VirtualAvaSDK/Model/AvatarInfo.swift",
+      "line": 91,
+      "symbol": "AvatarInfo.hash",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/wuhuibin/Developer/iOS/VirtualAvaSDK/VirtualAvaSDK/Model/BundleType.swift",
+      "line": 11,
+      "symbol": "MainType",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/wuhuibin/Developer/iOS/VirtualAvaSDK/VirtualAvaSDK/Model/BundleType.swift",
+      "line": 12,
+      "symbol": "MainType.beauty",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/wuhuibin/Developer/iOS/VirtualAvaSDK/VirtualAvaSDK/Model/BundleType.swift",
+      "line": 13,
+      "symbol": "MainType.dress",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/wuhuibin/Developer/iOS/VirtualAvaSDK/VirtualAvaSDK/Model/BundleType.swift",
+      "line": 14,
+      "symbol": "MainType.animation",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/wuhuibin/Developer/iOS/VirtualAvaSDK/VirtualAvaSDK/Model/BundleType.swift",
+      "line": 43,
+      "symbol": "BundleType",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/wuhuibin/Developer/iOS/VirtualAvaSDK/VirtualAvaSDK/Model/BundleType.swift",
+      "line": 53,
+      "symbol": "BundleType.makeup(_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/wuhuibin/Developer/iOS/VirtualAvaSDK/VirtualAvaSDK/Model/BundleType.swift",
+      "line": 89,
+      "symbol": "BundleType.isProp",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/wuhuibin/Developer/iOS/VirtualAvaSDK/VirtualAvaSDK/Model/BundleType.swift",
+      "line": 98,
+      "symbol": "BundleType.isMakeup",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/wuhuibin/Developer/iOS/VirtualAvaSDK/VirtualAvaSDK/Model/BundleType.swift",
+      "line": 107,
+      "symbol": "BundleType.MakeupType",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/wuhuibin/Developer/iOS/VirtualAvaSDK/VirtualAvaSDK/Model/BundleType.swift",
+      "line": 141,
+      "symbol": "BundleType.MakeupType.name",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/wuhuibin/Developer/iOS/VirtualAvaSDK/VirtualAvaSDK/Model/BundleType.swift",
+      "line": 180,
+      "symbol": "BundleType.MakeupType.init(from:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/wuhuibin/Developer/iOS/VirtualAvaSDK/VirtualAvaSDK/Model/FileStorage.swift",
+      "line": 15,
+      "symbol": "FileStorage",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/wuhuibin/Developer/iOS/VirtualAvaSDK/VirtualAvaSDK/Model/FileStorage.swift",
+      "line": 17,
+      "symbol": "FileStorage.share",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/wuhuibin/Developer/iOS/VirtualAvaSDK/VirtualAvaSDK/Model/FileStorage.swift",
+      "line": 96,
+      "symbol": "FileStorage.searchFile(for:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/wuhuibin/Developer/iOS/VirtualAvaSDK/VirtualAvaSDK/Network/AONNetClient+Reactive.swift",
+      "line": 14,
+      "symbol": "Reactive.getBundles(type:fetch:page:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/wuhuibin/Developer/iOS/VirtualAvaSDK/VirtualAvaSDK/Network/AONNetClient+Reactive.swift",
+      "line": 20,
+      "symbol": "Reactive.makeupBundle(by:for:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/wuhuibin/Developer/iOS/VirtualAvaSDK/VirtualAvaSDK/Network/AONNetClient+Reactive.swift",
+      "line": 26,
+      "symbol": "Reactive.saveCurrentAvatar(for:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/wuhuibin/Developer/iOS/VirtualAvaSDK/VirtualAvaSDK/Network/AONNetClient+Reactive.swift",
+      "line": 41,
+      "symbol": "Reactive.getBundles(by:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/wuhuibin/Developer/iOS/VirtualAvaSDK/VirtualAvaSDK/Network/AONNetClient.swift",
+      "line": 12,
+      "symbol": "DictionaryResult",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/wuhuibin/Developer/iOS/VirtualAvaSDK/VirtualAvaSDK/Network/AONNetClient.swift",
+      "line": 13,
+      "symbol": "ArrayResult",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/wuhuibin/Developer/iOS/VirtualAvaSDK/VirtualAvaSDK/Network/AONNetClient.swift",
+      "line": 14,
+      "symbol": "BundlesResult",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/wuhuibin/Developer/iOS/VirtualAvaSDK/VirtualAvaSDK/Network/AONNetClient.swift",
+      "line": 15,
+      "symbol": "AvatarResult",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/wuhuibin/Developer/iOS/VirtualAvaSDK/VirtualAvaSDK/Network/AONNetClient.swift",
+      "line": 16,
+      "symbol": "FilePathResult",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/wuhuibin/Developer/iOS/VirtualAvaSDK/VirtualAvaSDK/Network/AONNetClient.swift",
+      "line": 17,
+      "symbol": "BindResult",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/wuhuibin/Developer/iOS/VirtualAvaSDK/VirtualAvaSDK/Network/AONNetClient.swift",
+      "line": 23,
+      "symbol": "AONNetClient.sharedClinet",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/wuhuibin/Developer/iOS/VirtualAvaSDK/VirtualAvaSDK/Network/AONNetClient.swift",
+      "line": 164,
+      "symbol": "AONNetClient.uploadFileData(_:completion:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/wuhuibin/Developer/iOS/VirtualAvaSDK/VirtualAvaSDK/Network/HTTPClient+API.swift",
+      "line": 13,
+      "symbol": "Gender",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/wuhuibin/Developer/iOS/VirtualAvaSDK/VirtualAvaSDK/Network/HTTPClient+API.swift",
+      "line": 14,
+      "symbol": "Gender.unspecified",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/wuhuibin/Developer/iOS/VirtualAvaSDK/VirtualAvaSDK/Network/HTTPClient+API.swift",
+      "line": 15,
+      "symbol": "Gender.male",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/wuhuibin/Developer/iOS/VirtualAvaSDK/VirtualAvaSDK/Network/HTTPClient+API.swift",
+      "line": 16,
+      "symbol": "Gender.female",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/wuhuibin/Developer/iOS/VirtualAvaSDK/VirtualAvaSDK/Network/HTTPClient.swift",
+      "line": null,
+      "symbol": "HTTPClientError",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/wuhuibin/Developer/iOS/VirtualAvaSDK/VirtualAvaSDK/Network/HTTPClient.swift",
+      "line": 14,
+      "symbol": "ClientErrorCode",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/wuhuibin/Developer/iOS/VirtualAvaSDK/VirtualAvaSDK/Network/HTTPClient.swift",
+      "line": 15,
+      "symbol": "ClientErrorCode.netError",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/wuhuibin/Developer/iOS/VirtualAvaSDK/VirtualAvaSDK/Network/HTTPClient.swift",
+      "line": 16,
+      "symbol": "ClientErrorCode.parseDataError",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/wuhuibin/Developer/iOS/VirtualAvaSDK/VirtualAvaSDK/Network/HTTPClient.swift",
+      "line": 17,
+      "symbol": "ClientErrorCode.dataIsNull",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/wuhuibin/Developer/iOS/VirtualAvaSDK/VirtualAvaSDK/Network/HTTPClient.swift",
+      "line": 18,
+      "symbol": "ClientErrorCode.fileCreatFail",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/wuhuibin/Developer/iOS/VirtualAvaSDK/VirtualAvaSDK/Network/HTTPClient.swift",
+      "line": 19,
+      "symbol": "ClientErrorCode.downloadFail",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/wuhuibin/Developer/iOS/VirtualAvaSDK/VirtualAvaSDK/Network/HTTPClient.swift",
+      "line": 20,
+      "symbol": "ClientErrorCode.riverTokenError",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/wuhuibin/Developer/iOS/VirtualAvaSDK/VirtualAvaSDK/Utility/Log.swift",
+      "line": 12,
+      "symbol": "Log",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/wuhuibin/Developer/iOS/VirtualAvaSDK/VirtualAvaSDK/Utility/Log.swift",
+      "line": 36,
+      "symbol": "Log.info(_:_:_:line:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/wuhuibin/Developer/iOS/VirtualAvaSDK/VirtualAvaSDK/Utility/Log.swift",
+      "line": 40,
+      "symbol": "Log.error(_:_:_:line:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/wuhuibin/Developer/iOS/VirtualAvaSDK/VirtualAvaSDK/Utility/Log.swift",
+      "line": 44,
+      "symbol": "Log.warning(_:_:_:line:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/wuhuibin/Developer/iOS/VirtualAvaSDK/VirtualAvaSDK/Utility/Log.swift",
+      "line": 48,
+      "symbol": "Log.verbose(_:_:_:line:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.class",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/wuhuibin/Developer/iOS/VirtualAvaSDK"
+}

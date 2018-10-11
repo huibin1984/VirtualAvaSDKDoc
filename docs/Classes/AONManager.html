@@ -1,0 +1,2353 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>AONManager Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/AONManager" class="dashAnchor"></a>
+    <a title="AONManager Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a> (58% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        AONManager Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/AONManager.html">AONManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AONManager/AULoopMode.html">– AULoopMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AONManager/AnimationLoopMode.html">– AnimationLoopMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AONNetClient.html">AONNetClient</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AuthInfo.html">AuthInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AvaBundle.html">AvaBundle</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AvatarInfo.html">AvatarInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AvatarView.html">AvatarView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AvatarView/AvatarRenderMode.html">– AvatarRenderMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/FileStorage.html">FileStorage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Log.html">Log</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/BundleType.html">BundleType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/BundleType/MakeupType.html">– MakeupType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ClientErrorCode.html">ClientErrorCode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Gender.html">Gender</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/MainType.html">MainType</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/HTTPClientError.html">HTTPClientError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Reactive.html">Reactive</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:13VirtualAvaSDK11ArrayResulta">ArrayResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:13VirtualAvaSDK12AvatarResulta">AvatarResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:13VirtualAvaSDK10BindResulta">BindResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:13VirtualAvaSDK13BundlesResulta">BundlesResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:13VirtualAvaSDK16DictionaryResulta">DictionaryResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:13VirtualAvaSDK14FilePathResulta">FilePathResult</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>AONManager</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="kt">AONManager</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+
+                </div>
+              </div>
+            <p>Avatar Open Network Manager</p>
+
+<p>负责处理avatar相关功能. 一个manager只能处理一个avatar, 可以同时存在多个manager</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/init/deinit"></a>
+                <a name="//apple_ref/swift/Section/init/deinit" class="dashAnchor"></a>
+                <a href="#/init/deinit">
+                  <h3 class="section-name">init/deinit</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@VirtualAvaSDK@objc(cs)AONManager(im)init"></a>
+                    <a name="//apple_ref/swift/Method/init()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@VirtualAvaSDK@objc(cs)AONManager(im)init">init()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>初始化manager</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="k">override</span> <span class="nf">init</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/state"></a>
+                <a name="//apple_ref/swift/Section/state" class="dashAnchor"></a>
+                <a href="#/state">
+                  <h3 class="section-name">state</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@VirtualAvaSDK@objc(cs)AONManager(py)avatarView"></a>
+                    <a name="//apple_ref/swift/Property/avatarView" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@VirtualAvaSDK@objc(cs)AONManager(py)avatarView">avatarView</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>负责渲染avatar的view，一个manager只有一个avatarView，
+这个view可以作为普通的view，存在于UIView的层次机构中</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="k">let</span> <span class="nv">avatarView</span><span class="p">:</span> <span class="kt"><a href="../Classes/AvatarView.html">AvatarView</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@VirtualAvaSDK@objc(cs)AONManager(py)currentAvatar"></a>
+                    <a name="//apple_ref/swift/Property/currentAvatar" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@VirtualAvaSDK@objc(cs)AONManager(py)currentAvatar">currentAvatar</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>当前正在渲染的avatar</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">internal(set)</span> <span class="k">var</span> <span class="nv">currentAvatar</span><span class="p">:</span> <span class="kt"><a href="../Classes/AvatarInfo.html">AvatarInfo</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@VirtualAvaSDK@objc(cs)AONManager(py)currentModel"></a>
+                    <a name="//apple_ref/swift/Property/currentModel" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@VirtualAvaSDK@objc(cs)AONManager(py)currentModel">currentModel</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>当前正在渲染的Model</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">internal(set)</span> <span class="k">var</span> <span class="nv">currentModel</span><span class="p">:</span> <span class="kt"><a href="../Classes/AvaBundle.html">AvaBundle</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@VirtualAvaSDK@objc(cs)AONManager(py)loadedBundles"></a>
+                    <a name="//apple_ref/swift/Property/loadedBundles" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@VirtualAvaSDK@objc(cs)AONManager(py)loadedBundles">loadedBundles</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>当前加载的bundle list</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">internal(set)</span> <span class="k">var</span> <span class="nv">loadedBundles</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Classes/AvaBundle.html">AvaBundle</a></span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/AU"></a>
+                <a name="//apple_ref/swift/Section/AU" class="dashAnchor"></a>
+                <a href="#/AU">
+                  <h3 class="section-name">AU</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13VirtualAvaSDK10AONManagerC10AULoopModeO"></a>
+                    <a name="//apple_ref/swift/Enum/AULoopMode" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13VirtualAvaSDK10AONManagerC10AULoopModeO">AULoopMode</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>AU表情的循环运行模式</p>
+
+                        <a href="../Classes/AONManager/AULoopMode.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">enum</span> <span class="kt">AULoopMode</span> <span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@VirtualAvaSDK@objc(cs)AONManager(im)startAUFor:loopMode:error:finished:"></a>
+                    <a name="//apple_ref/swift/Method/startAU(for:loopMode:finished:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@VirtualAvaSDK@objc(cs)AONManager(im)startAUFor:loopMode:error:finished:">startAU(for:loopMode:finished:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>开始播放AU</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    播放骨骼动画前，必须先加载动画bundle
+
+</div>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    如果没有加载bundle，直接运行时，会抛出异常
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">startAU</span><span class="p">(</span><span class="k">for</span> <span class="nv">bundle</span><span class="p">:</span> <span class="kt"><a href="../Classes/AvaBundle.html">AvaBundle</a></span><span class="p">,</span> <span class="nv">loopMode</span><span class="p">:</span> <span class="kt"><a href="../Classes/AONManager/AULoopMode.html">AULoopMode</a></span><span class="p">,</span> <span class="n">finished</span> <span class="nv">block</span><span class="p">:</span> <span class="p">((</span><span class="n">_</span> <span class="nv">finished</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?)</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>bundle</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>需要加载的骨骼动画bundle</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>loopMode</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>动画循环模式</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>block</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>动画结束时的回掉函数</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>finished</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>动画是否正常结束</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13VirtualAvaSDK10AONManagerC6stopAUyyF"></a>
+                    <a name="//apple_ref/swift/Method/stopAU()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13VirtualAvaSDK10AONManagerC6stopAUyyF">stopAU()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>停止AU播放</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">stopAU</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Skeleton%20animation"></a>
+                <a name="//apple_ref/swift/Section/Skeleton animation" class="dashAnchor"></a>
+                <a href="#/Skeleton%20animation">
+                  <h3 class="section-name">Skeleton animation</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13VirtualAvaSDK10AONManagerC17AnimationLoopModeO"></a>
+                    <a name="//apple_ref/swift/Enum/AnimationLoopMode" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13VirtualAvaSDK10AONManagerC17AnimationLoopModeO">AnimationLoopMode</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>骨骼动画的循环播放模式</p>
+
+                        <a href="../Classes/AONManager/AnimationLoopMode.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">enum</span> <span class="kt">AnimationLoopMode</span> <span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@VirtualAvaSDK@objc(cs)AONManager(im)startSkeletonAnimationFor:loopMode:error:finished:"></a>
+                    <a name="//apple_ref/swift/Method/startSkeletonAnimation(for:loopMode:finished:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@VirtualAvaSDK@objc(cs)AONManager(im)startSkeletonAnimationFor:loopMode:error:finished:">startSkeletonAnimation(for:loopMode:finished:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>开始播放骨骼动画</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    播放骨骼动画前，必须先加载动画bundle
+
+</div>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    如果没有加载bundle，直接运行时，会抛出异常
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">startSkeletonAnimation</span><span class="p">(</span><span class="k">for</span> <span class="nv">bundle</span><span class="p">:</span> <span class="kt"><a href="../Classes/AvaBundle.html">AvaBundle</a></span><span class="p">,</span> <span class="nv">loopMode</span><span class="p">:</span> <span class="kt"><a href="../Classes/AONManager/AnimationLoopMode.html">AnimationLoopMode</a></span><span class="p">,</span> <span class="n">finished</span> <span class="nv">block</span><span class="p">:</span> <span class="p">((</span><span class="n">_</span> <span class="nv">finished</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?)</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>bundle</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>需要加载的骨骼动画bundle</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>loopMode</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>动画循环模式</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>block</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>动画结束时的回掉函数</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>finished</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>动画是否正常结束</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13VirtualAvaSDK10AONManagerC22pauseSekeltonAnimationyyF"></a>
+                    <a name="//apple_ref/swift/Method/pauseSekeltonAnimation()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13VirtualAvaSDK10AONManagerC22pauseSekeltonAnimationyyF">pauseSekeltonAnimation()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>暂停骨骼动画</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">pauseSekeltonAnimation</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13VirtualAvaSDK10AONManagerC24resumeSekeletonAnimationyyF"></a>
+                    <a name="//apple_ref/swift/Method/resumeSekeletonAnimation()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13VirtualAvaSDK10AONManagerC24resumeSekeletonAnimationyyF">resumeSekeletonAnimation()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>恢复被暂停的骨骼动画</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">resumeSekeletonAnimation</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13VirtualAvaSDK10AONManagerC10AuthResulta"></a>
+                    <a name="//apple_ref/swift/Alias/AuthResult" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13VirtualAvaSDK10AONManagerC10AuthResulta">AuthResult</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>需要认证信息的回调类型</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">typealias</span> <span class="kt">AuthResult</span> <span class="o">=</span> <span class="p">((</span><span class="n">_</span> <span class="nv">autInfo</span><span class="p">:</span> <span class="kt"><a href="../Classes/AuthInfo.html">AuthInfo</a></span><span class="p">?,</span> <span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>autInfo</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>服务器返回的一些认证信息</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>error</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>初始化失败后抛出的error</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@VirtualAvaSDK@objc(cs)AONManager(cm)configWithAppID:finishedBlock:"></a>
+                    <a name="//apple_ref/swift/Method/config(appID:finishedBlock:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@VirtualAvaSDK@objc(cs)AONManager(cm)configWithAppID:finishedBlock:">config(appID:finishedBlock:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>初始化SDK</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    使用SDK前必须先调用此函数，如果调用失败，则无法使用SDK相关功能. 如果失败，可以多次重新初始化.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">config</span><span class="p">(</span><span class="nv">appID</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">finishedBlock</span> <span class="nv">block</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt"><a href="../Classes/AONManager.html#/s:13VirtualAvaSDK10AONManagerC10AuthResulta">AuthResult</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>appID</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>当前App的appID，在申请SDK时获取</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>block</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>初始化的回调函数, 在主线程执行</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Avatar"></a>
+                <a name="//apple_ref/swift/Section/Avatar" class="dashAnchor"></a>
+                <a href="#/Avatar">
+                  <h3 class="section-name">Avatar</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@VirtualAvaSDK@objc(cs)AONManager(im)loadAvatarBy:finished:"></a>
+                    <a name="//apple_ref/swift/Method/loadAvatar(by:finished:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@VirtualAvaSDK@objc(cs)AONManager(im)loadAvatarBy:finished:">loadAvatar(by:finished:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>通过ID来加载avatar.</p>
+
+<p>如果已经有avatar存在，会把老的avatar替换掉</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">loadAvatar</span><span class="p">(</span><span class="n">by</span> <span class="nv">avatarID</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">finished</span> <span class="nv">block</span><span class="p">:</span> <span class="kt"><a href="../Classes/AONManager.html#/s:13VirtualAvaSDK10AONManagerC10ErrorBlocka">ErrorBlock</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>avatarID</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>avatar的ID</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>block</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>加载的回调函数，在主线程执行</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@VirtualAvaSDK@objc(cs)AONManager(im)loadAvatar:finished:"></a>
+                    <a name="//apple_ref/swift/Method/loadAvatar(_:finished:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@VirtualAvaSDK@objc(cs)AONManager(im)loadAvatar:finished:">loadAvatar(_:finished:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>加载avatar</p>
+
+<p>如果已经有avatar存在，会把老的avatar替换掉</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">loadAvatar</span><span class="p">(</span><span class="n">_</span> <span class="nv">avatar</span><span class="p">:</span> <span class="kt"><a href="../Classes/AvatarInfo.html">AvatarInfo</a></span><span class="p">,</span> <span class="n">finished</span> <span class="nv">block</span><span class="p">:</span> <span class="kt"><a href="../Classes/AONManager.html#/s:13VirtualAvaSDK10AONManagerC10ErrorBlocka">ErrorBlock</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>avatar</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>准备加载的avatar</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>block</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>加载的回调函数，在主线程执行</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@VirtualAvaSDK@objc(cs)AONManager(im)unloadCurrentAvatarWithFinished:"></a>
+                    <a name="//apple_ref/swift/Method/unloadCurrentAvatar(finished:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@VirtualAvaSDK@objc(cs)AONManager(im)unloadCurrentAvatarWithFinished:">unloadCurrentAvatar(finished:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>unload当前avatar</p>
+
+<p>当前没有avatar时，不做任何处理</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">unloadCurrentAvatar</span><span class="p">(</span><span class="n">finished</span> <span class="nv">block</span><span class="p">:</span> <span class="kt"><a href="../Classes/AONManager.html#/s:13VirtualAvaSDK10AONManagerC10ErrorBlocka">ErrorBlock</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>block</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>卸载的回调函数，在主线程执行</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/load%20bundle"></a>
+                <a name="//apple_ref/swift/Section/load bundle" class="dashAnchor"></a>
+                <a href="#/load%20bundle">
+                  <h3 class="section-name">load bundle</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13VirtualAvaSDK10AONManagerC10loadBundle2by4with8finishedySS_SfSgys5Error_pSgcSgtF"></a>
+                    <a name="//apple_ref/swift/Method/loadBundle(by:with:finished:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13VirtualAvaSDK10AONManagerC10loadBundle2by4with8finishedySS_SfSgys5Error_pSgcSgtF">loadBundle(by:with:finished:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>加载非avatar类型的bundle</p>
+
+<p>可用类型包括道具\容貌调整\骨骼动画\面部表情等</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">loadBundle</span><span class="p">(</span><span class="n">by</span> <span class="nv">bundleID</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">with</span> <span class="nv">adjust</span><span class="p">:</span> <span class="kt">Float</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="n">finished</span> <span class="nv">block</span><span class="p">:</span> <span class="kt"><a href="../Classes/AONManager.html#/s:13VirtualAvaSDK10AONManagerC10ErrorBlocka">ErrorBlock</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>bundleID</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>需要加载的bundleID</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>adjust</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>部分bundle的可选参数值，比如容貌调整的美白\磨皮等，范围为[0.0 - 100.0]</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>block</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>加载的回调函数，在主线程执行</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13VirtualAvaSDK10AONManagerC10loadBundle_4with8finishedyAA0bF0C_SfSgys5Error_pSgcSgtF"></a>
+                    <a name="//apple_ref/swift/Method/loadBundle(_:with:finished:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13VirtualAvaSDK10AONManagerC10loadBundle_4with8finishedyAA0bF0C_SfSgys5Error_pSgcSgtF">loadBundle(_:with:finished:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>加载非avatar类型的bundle</p>
+
+<p>可用类型包括道具\容貌调整\骨骼动画\面部表情等</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">loadBundle</span><span class="p">(</span><span class="n">_</span> <span class="nv">bundle</span><span class="p">:</span> <span class="kt"><a href="../Classes/AvaBundle.html">AvaBundle</a></span><span class="p">,</span> <span class="n">with</span> <span class="nv">adjust</span><span class="p">:</span> <span class="kt">Float</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="n">finished</span> <span class="nv">block</span><span class="p">:</span> <span class="kt"><a href="../Classes/AONManager.html#/s:13VirtualAvaSDK10AONManagerC10ErrorBlocka">ErrorBlock</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>bundle</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>需要加载的bundle</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>adjust</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>部分bundle的可选参数值，比如容貌调整的美白\磨皮等，范围为[0.0 - 100.0]</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>block</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>加载的回调函数，在主线程执行</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13VirtualAvaSDK10AONManagerC11loadBundles2by4with8finishedySaySSG_SaySfSgGSgys5Error_pSgcSgtF"></a>
+                    <a name="//apple_ref/swift/Method/loadBundles(by:with:finished:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13VirtualAvaSDK10AONManagerC11loadBundles2by4with8finishedySaySSG_SaySfSgGSgys5Error_pSgcSgtF">loadBundles(by:with:finished:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>加载非avatar类型的bundles</p>
+
+<p>可用类型包括道具\容貌调整\骨骼动画\面部表情等</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">loadBundles</span><span class="p">(</span><span class="n">by</span> <span class="nv">bundleIDs</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">],</span> <span class="n">with</span> <span class="nv">adjusts</span><span class="p">:</span> <span class="p">[</span><span class="kt">Float</span><span class="p">?]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="n">finished</span> <span class="nv">block</span><span class="p">:</span> <span class="kt"><a href="../Classes/AONManager.html#/s:13VirtualAvaSDK10AONManagerC10ErrorBlocka">ErrorBlock</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>bundleIDs</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>需要加载的bundle ids</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>adjusts</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>部分bundle的可选参数值，比如容貌调整的美白\磨皮等，范围为[0.0 - 100.0]</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>block</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>加载的回调函数，在主线程执行</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@VirtualAvaSDK@objc(cs)AONManager(im)cancelLoadAction"></a>
+                    <a name="//apple_ref/swift/Method/cancelLoadAction()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@VirtualAvaSDK@objc(cs)AONManager(im)cancelLoadAction">cancelLoadAction()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>取消正在进行的加载当前bundle的操作</p>
+
+<p>这个取消主要用于取消下载当前的abundle</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">cancelLoadAction</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/unload%20bundles"></a>
+                <a name="//apple_ref/swift/Section/unload bundles" class="dashAnchor"></a>
+                <a href="#/unload%20bundles">
+                  <h3 class="section-name">unload bundles</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@VirtualAvaSDK@objc(cs)AONManager(im)unloadWithBundles:"></a>
+                    <a name="//apple_ref/swift/Method/unload(bundles:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@VirtualAvaSDK@objc(cs)AONManager(im)unloadWithBundles:">unload(bundles:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>unload 加载的bundles</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">unload</span><span class="p">(</span><span class="nv">bundles</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Classes/AvaBundle.html">AvaBundle</a></span><span class="p">])</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>bundles</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>需要unload的bundles</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@VirtualAvaSDK@objc(cs)AONManager(im)unloadWithBundle:"></a>
+                    <a name="//apple_ref/swift/Method/unload(bundle:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@VirtualAvaSDK@objc(cs)AONManager(im)unloadWithBundle:">unload(bundle:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">unload</span><span class="p">(</span><span class="nv">bundle</span><span class="p">:</span> <span class="kt"><a href="../Classes/AvaBundle.html">AvaBundle</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>bundle</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>需要unload的bundle</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@VirtualAvaSDK@objc(cs)AONManager(im)unloadAllBundles"></a>
+                    <a name="//apple_ref/swift/Method/unloadAllBundles()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@VirtualAvaSDK@objc(cs)AONManager(im)unloadAllBundles">unloadAllBundles()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>unload所有已经加载的bundles</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">unloadAllBundles</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/unload%20bundles2"></a>
+                <a name="//apple_ref/swift/Section/unload bundles" class="dashAnchor"></a>
+                <a href="#/unload%20bundles2">
+                  <h3 class="section-name">unload bundles</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@VirtualAvaSDK@objc(cs)AONManager(im)loadBundle_ocBy:with:finished:"></a>
+                    <a name="//apple_ref/swift/Method/loadBundle_oc(by:with:finished:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@VirtualAvaSDK@objc(cs)AONManager(im)loadBundle_ocBy:with:finished:">loadBundle_oc(by:with:finished:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>加载非avatar类型的bundle</p>
+
+<p>可用类型包括道具\容貌调整\骨骼动画\面部表情等</p>
+
+                        <a href="../Classes/AONManager/loadBundle_oc(by:with:finished:).html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">loadBundle_oc</span><span class="p">(</span><span class="n">by</span> <span class="nv">bundleID</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">with</span> <span class="nv">adjust</span><span class="p">:</span> <span class="kt">NSNumber</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="n">finished</span> <span class="nv">block</span><span class="p">:</span> <span class="kt"><a href="../Classes/AONManager.html#/s:13VirtualAvaSDK10AONManagerC10ErrorBlocka">ErrorBlock</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>bundleID</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>需要加载的bundleID</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>adjust</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>部分bundle的可选参数值，比如容貌调整的美白\磨皮等，范围为[0.0 - 100.0]</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>block</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>加载的回调函数，在主线程执行</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@VirtualAvaSDK@objc(cs)AONManager(im)loadBundle_oc:with:finished:"></a>
+                    <a name="//apple_ref/swift/Method/loadBundle_oc(_:with:finished:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@VirtualAvaSDK@objc(cs)AONManager(im)loadBundle_oc:with:finished:">loadBundle_oc(_:with:finished:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>加载非avatar类型的bundle</p>
+
+<p>可用类型包括道具\容貌调整\骨骼动画\面部表情等</p>
+
+                        <a href="../Classes/AONManager/loadBundle_oc(_:with:finished:).html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">loadBundle_oc</span><span class="p">(</span><span class="n">_</span> <span class="nv">bundle</span><span class="p">:</span> <span class="kt"><a href="../Classes/AvaBundle.html">AvaBundle</a></span><span class="p">,</span> <span class="n">with</span> <span class="nv">adjust</span><span class="p">:</span> <span class="kt">NSNumber</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="n">finished</span> <span class="nv">block</span><span class="p">:</span> <span class="kt"><a href="../Classes/AONManager.html#/s:13VirtualAvaSDK10AONManagerC10ErrorBlocka">ErrorBlock</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>bundle</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>需要加载的bundle</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>adjust</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>部分bundle的可选参数值，比如容貌调整的美白\磨皮等，范围为[0.0 - 100.0]</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>block</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>加载的回调函数，在主线程执行</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@VirtualAvaSDK@objc(cs)AONManager(im)loadBundles_ocBy:with:finished:"></a>
+                    <a name="//apple_ref/swift/Method/loadBundles_oc(by:with:finished:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@VirtualAvaSDK@objc(cs)AONManager(im)loadBundles_ocBy:with:finished:">loadBundles_oc(by:with:finished:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>加载非avatar类型的bundles</p>
+
+<p>可用类型包括道具\容貌调整\骨骼动画\面部表情等</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">loadBundles_oc</span><span class="p">(</span><span class="n">by</span> <span class="nv">bundleIDs</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">],</span> <span class="n">with</span> <span class="nv">adjusts</span><span class="p">:</span> <span class="p">[</span><span class="kt">NSNumber</span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="n">finished</span> <span class="nv">block</span><span class="p">:</span> <span class="kt"><a href="../Classes/AONManager.html#/s:13VirtualAvaSDK10AONManagerC10ErrorBlocka">ErrorBlock</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>bundleIDs</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>需要加载的bundle ids</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>adjusts</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>部分bundle的可选参数值，比如容貌调整的美白\磨皮等，范围为[0.0 - 100.0]</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>block</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>加载的回调函数，在主线程执行</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/beauty"></a>
+                <a name="//apple_ref/swift/Section/beauty" class="dashAnchor"></a>
+                <a href="#/beauty">
+                  <h3 class="section-name">beauty</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13VirtualAvaSDK10AONManagerC28makeupBundleIDAndAdjustValue3forSSSg8bundleID_SfSg6adjusttAA0F4TypeO06MakeupN0O_tF"></a>
+                    <a name="//apple_ref/swift/Method/makeupBundleIDAndAdjustValue(for:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13VirtualAvaSDK10AONManagerC28makeupBundleIDAndAdjustValue3forSSSg8bundleID_SfSg6adjusttAA0F4TypeO06MakeupN0O_tF">makeupBundleIDAndAdjustValue(for:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>获取当前avatar已经加载的容貌budnle ID和调整值</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">makeupBundleIDAndAdjustValue</span><span class="p">(</span><span class="k">for</span> <span class="nv">type</span><span class="p">:</span> <span class="kt"><a href="../Enums/BundleType.html">BundleType</a></span><span class="o">.</span><span class="kt">MakeupType</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">(</span><span class="nv">bundleID</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span> <span class="nv">adjust</span><span class="p">:</span> <span class="kt">Float</span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>type</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>容貌类型</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><ul>
+<li>bundleID: 已经加载的容貌bundle ID</li>
+<li>adjust: 已经加载的容貌的调整值</li>
+</ul></p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13VirtualAvaSDK10AONManagerC23adjustValueForOrganType2bySfSgSS_tF"></a>
+                    <a name="//apple_ref/swift/Method/adjustValueForOrganType(by:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13VirtualAvaSDK10AONManagerC23adjustValueForOrganType2bySfSgSS_tF">adjustValueForOrganType(by:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>获取当前avatar已经加载的五官的调整值</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">adjustValueForOrganType</span><span class="p">(</span><span class="n">by</span> <span class="nv">bundleID</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Float</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>bundleID</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>五官的bundleID</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>对应的五官的调整值</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/OC%20API"></a>
+                <a name="//apple_ref/swift/Section/OC API" class="dashAnchor"></a>
+                <a href="#/OC%20API">
+                  <h3 class="section-name">OC API</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@VirtualAvaSDK@objc(cs)AONManager(im)makeupBundleID_ocFor:"></a>
+                    <a name="//apple_ref/swift/Method/makeupBundleID_oc(for:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@VirtualAvaSDK@objc(cs)AONManager(im)makeupBundleID_ocFor:">makeupBundleID_oc(for:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>获取当前avatar已经加载的容貌budnle ID</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">makeupBundleID_oc</span><span class="p">(</span><span class="k">for</span> <span class="nv">type</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>type</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>容貌类型</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>已经加载的容貌bundle ID</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@VirtualAvaSDK@objc(cs)AONManager(im)makeupAdjustValue_ocFor:"></a>
+                    <a name="//apple_ref/swift/Method/makeupAdjustValue_oc(for:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@VirtualAvaSDK@objc(cs)AONManager(im)makeupAdjustValue_ocFor:">makeupAdjustValue_oc(for:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>获取当前avatar已经加载的容貌调整值</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">makeupAdjustValue_oc</span><span class="p">(</span><span class="k">for</span> <span class="nv">type</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">NSNumber</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>type</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>容貌类型</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>已经加载的容貌的调整值</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@VirtualAvaSDK@objc(cs)AONManager(im)adjustValueForOrganType_ocBy:"></a>
+                    <a name="//apple_ref/swift/Method/adjustValueForOrganType_oc(by:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@VirtualAvaSDK@objc(cs)AONManager(im)adjustValueForOrganType_ocBy:">adjustValueForOrganType_oc(by:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>获取当前avatar已经加载的五官的调整值</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">adjustValueForOrganType_oc</span><span class="p">(</span><span class="n">by</span> <span class="nv">bundleID</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">NSNumber</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>bundleID</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>五官的bundleID</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>对应的五官的调整值</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Model"></a>
+                <a name="//apple_ref/swift/Section/Model" class="dashAnchor"></a>
+                <a href="#/Model">
+                  <h3 class="section-name">Model</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13VirtualAvaSDK10AONManagerC11loadModelBy7modelID8finishedySS_ys5Error_pSgcSgtF"></a>
+                    <a name="//apple_ref/swift/Method/loadModelBy(modelID:finished:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13VirtualAvaSDK10AONManagerC11loadModelBy7modelID8finishedySS_ys5Error_pSgcSgtF">loadModelBy(modelID:finished:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>加载Model</p>
+
+<p>如果已经有model存在，会把老的model替换掉
+如果已经有avatar，会先卸载avatar</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">loadModelBy</span><span class="p">(</span><span class="nv">modelID</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">finished</span> <span class="nv">block</span><span class="p">:</span> <span class="kt"><a href="../Classes/AONManager.html#/s:13VirtualAvaSDK10AONManagerC10ErrorBlocka">ErrorBlock</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>model</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>准备加载的model bundle</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>block</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>加载的回调函数，在主线程执行</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13VirtualAvaSDK10AONManagerC4load5model8finishedyAA0B6BundleC_ys5Error_pSgcSgtF"></a>
+                    <a name="//apple_ref/swift/Method/load(model:finished:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13VirtualAvaSDK10AONManagerC4load5model8finishedyAA0B6BundleC_ys5Error_pSgcSgtF">load(model:finished:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>加载Model</p>
+
+<p>如果已经有model存在，会把老的model替换掉
+如果已经有avatar，会先卸载avatar</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">load</span><span class="p">(</span><span class="nv">model</span><span class="p">:</span> <span class="kt"><a href="../Classes/AvaBundle.html">AvaBundle</a></span><span class="p">,</span> <span class="n">finished</span> <span class="nv">block</span><span class="p">:</span> <span class="kt"><a href="../Classes/AONManager.html#/s:13VirtualAvaSDK10AONManagerC10ErrorBlocka">ErrorBlock</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>model</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>准备加载的model bundle</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>block</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>加载的回调函数，在主线程执行</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13VirtualAvaSDK10AONManagerC18unloadCurrentModel8finishedyys5Error_pSgcSg_tF"></a>
+                    <a name="//apple_ref/swift/Method/unloadCurrentModel(finished:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13VirtualAvaSDK10AONManagerC18unloadCurrentModel8finishedyys5Error_pSgcSg_tF">unloadCurrentModel(finished:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>卸载当前model</p>
+
+<p>当前没有model时，不做任何处理</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">unloadCurrentModel</span><span class="p">(</span><span class="n">finished</span> <span class="nv">block</span><span class="p">:</span> <span class="kt"><a href="../Classes/AONManager.html#/s:13VirtualAvaSDK10AONManagerC10ErrorBlocka">ErrorBlock</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>block</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>卸载的回调函数，在主线程执行</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Props"></a>
+                <a name="//apple_ref/swift/Section/Props" class="dashAnchor"></a>
+                <a href="#/Props">
+                  <h3 class="section-name">Props</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13VirtualAvaSDK10AONManagerC11loadedPropsSayAA0B6BundleCGvp"></a>
+                    <a name="//apple_ref/swift/Property/loadedProps" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13VirtualAvaSDK10AONManagerC11loadedPropsSayAA0B6BundleCGvp">loadedProps</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>当前加载的所有道具bundle</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">loadedProps</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Classes/AvaBundle.html">AvaBundle</a></span><span class="p">]</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@VirtualAvaSDK@objc(cs)AONManager(im)rotateAvatarByX:y:"></a>
+                    <a name="//apple_ref/swift/Method/rotateAvatarBy(x:y:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@VirtualAvaSDK@objc(cs)AONManager(im)rotateAvatarByX:y:">rotateAvatarBy(x:y:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>增量旋转当前avatar</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">rotateAvatarBy</span><span class="p">(</span><span class="nv">x</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">,</span> <span class="nv">y</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>x</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>需要旋转的x值</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>y</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>需要旋转的y值</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@VirtualAvaSDK@objc(cs)AONManager(im)translateAvatarByX:y:z:"></a>
+                    <a name="//apple_ref/swift/Method/translateAvatarBy(x:y:z:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@VirtualAvaSDK@objc(cs)AONManager(im)translateAvatarByX:y:z:">translateAvatarBy(x:y:z:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>增量移动当前avatar</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">translateAvatarBy</span><span class="p">(</span><span class="nv">x</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">,</span> <span class="nv">y</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">,</span> <span class="nv">z</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>x</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>需要移动的x值</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>y</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>需要移动的y值</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>z</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>需要移动的z值</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@VirtualAvaSDK@objc(cs)AONManager(im)scaleAvatarBy:"></a>
+                    <a name="//apple_ref/swift/Method/scaleAvatar(by:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@VirtualAvaSDK@objc(cs)AONManager(im)scaleAvatarBy:">scaleAvatar(by:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>增量缩放当前avatar</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">scaleAvatar</span><span class="p">(</span><span class="n">by</span> <span class="nv">scale</span><span class="p">:</span> <span class="kt">Float</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>scale</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>需要缩放的大小</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Utility"></a>
+                <a name="//apple_ref/swift/Section/Utility" class="dashAnchor"></a>
+                <a href="#/Utility">
+                  <h3 class="section-name">Utility</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@VirtualAvaSDK@objc(cs)AONManager(im)snapshotAvatarImageWithFinished:"></a>
+                    <a name="//apple_ref/swift/Method/snapshotAvatarImage(finished:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@VirtualAvaSDK@objc(cs)AONManager(im)snapshotAvatarImageWithFinished:">snapshotAvatarImage(finished:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>获取当前avatar的截图</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">snapshotAvatarImage</span><span class="p">(</span><span class="n">finished</span> <span class="nv">block</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">UIImage</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13VirtualAvaSDK10AONManagerC10ErrorBlocka"></a>
+                    <a name="//apple_ref/swift/Alias/ErrorBlock" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13VirtualAvaSDK10AONManagerC10ErrorBlocka">ErrorBlock</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>异步处理结果的回调类型</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">typealias</span> <span class="kt">ErrorBlock</span> <span class="o">=</span> <span class="p">((</span><span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>error</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>如果error为nil，则代表成功，否则会出发错误</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2018-10-11)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
